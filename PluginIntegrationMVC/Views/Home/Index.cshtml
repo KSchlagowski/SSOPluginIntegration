@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @*<script defer src="https://cdn.commento.io/js/commento.js"></script>
+        <div id="commento"></div>*@
+
+    @*<link href="Stylesheet.css" rel="stylesheet" type="text/css" />*@
+
+    <script defer
+            src="https://cdn.commento.io/js/commento.js"
+            data-css-override="Stylesheet.css" @*"http://example.com/my-custom-styling.css"*@
+            data-auto-init="true">
+    </script>
+    <div id="commento"></div>
+</div>
