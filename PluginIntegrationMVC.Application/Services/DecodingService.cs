@@ -9,6 +9,7 @@ namespace PluginIntegrationMVC.Application.Services
 {
     public class DecodingService : IDecodingService
     {
+        //This code was copied, but it turned out that's not working as expected
         //http://nullskull.com/faq/834/convert-string-to-hex-and-hex-to-string-in-net.aspx
         //public string EncodeStringToHex(String input, System.Text.Encoding encoding)
         //{
@@ -46,10 +47,7 @@ namespace PluginIntegrationMVC.Application.Services
                 if (i%2 == 0)
                 {
                     int value = Convert.ToInt32(hex, 16);
-                    //string stringValue = Char.ConvertFromUtf32(value);
                     char charValue = (char)value;
-                    //Console.WriteLine("hexadecimal value = {0}, int value = {1}, char value = {2} or {3}",
-                    // hex, value, stringValue, charValue);
                     output += charValue.ToString();
                     hex = string.Empty;
                 }
